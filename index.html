@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
     <Title>Calculator</title>
-    
-    
+
+    <link rel="stylesheet" type="text/css" href="assets/calc_style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
+
 <body>
     <div id="calculator">
-        <h1>Calculator</h1>
+        <h1></h1>
         <p id="last_operation_history"></p>
         <p id="box" class="box">0</p>
         <table id="table">
@@ -41,18 +43,20 @@
             <tr>
                 <td><button onclick="button_number(1)">1</button></td>
                 <td><button onclick="button_number(2)">2</button></td>
-                <td><button onclick="button_number(3)">3</button></td>            
+                <td><button onclick="button_number(3)">3</button></td>
                 <td><button id="divOp" value="/" class="operator" onclick="button_number('/')">÷</button></td>
             </tr>
             <tr>
                 <td><button onclick="plus_minus()">±</button></td>
                 <td><button onclick="button_number(0)">0</button></td>
                 <td><button id="dot" value="." onclick="button_number('.')">.</button></td>
-                <td colspan="4"><button value="=" class="operator" id="equal_sign" onclick="button_number('=')">=</button></td>
+                <td colspan="4"><button value="=" class="operator" id="equal_sign"
+                        onclick="button_number('=')">=</button></td>
             </tr>
         </table>
     </div>
 
-    
+
 </body>
+
 </html>
